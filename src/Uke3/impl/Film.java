@@ -3,11 +3,6 @@ package Uke3.impl;
 import java.util.*;
 
 public class Film {
-    // Enum (oppramstype):
-    public enum Sjanger {
-        ACTION, COMEDY, ROMANCE, FANTASY, CRIME, ANIMATION, DOCUMENTARY
-    }
-
     // Objektvariabler:
     private int filmnr; // Unik ID
     private int lanseringsAar;

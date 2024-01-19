@@ -8,7 +8,7 @@ public interface FilmarkivADT {
      * @param nr nummer på film som skal hentes.
      * @return film med gitt nr. Om nr ikke finnes, returneres null.
      */
-    Film finnfilm(int nr);
+    Film finnFilm(int nr);
 
     /**
      * Legger til en ny film.
@@ -42,7 +42,7 @@ public interface FilmarkivADT {
      * @param sjanger
      * @return antall filmer av en gitt sjanger.
      */
-    int antall(Film.Sjanger sjanger);
+    int antall(Sjanger sjanger);
 
     /**
      * @return antall filmer i arkivet

@@ -20,13 +20,23 @@ public class Filmarkiv implements FilmarkivADT {
     }
 
     @Override
-    public Film finnfilm(int nr) {
+    public Film finnFilm(int nr) {
+        for(int i = 0; i < filmer.length; i++) {
+            if (filmer[i].getFilmnr() == nr) {
+                return filmer[i];
+            }
+        }
         return null;
     }
 
     @Override
     public void leggTilFilm(Film nyFilm) {
-
+        for(int i = 0; i < filmer.length; i++) {
+            if (filmer[i] == null) {
+                filmer[i] = nyFilm;
+                break;
+            }
+        }
     }
 
     @Override
@@ -45,7 +55,7 @@ public class Filmarkiv implements FilmarkivADT {
     }
 
     @Override
-    public int antall(Film.Sjanger sjanger) {
+    public int antall(Sjanger sjanger) {
         return 0;
     }
 
