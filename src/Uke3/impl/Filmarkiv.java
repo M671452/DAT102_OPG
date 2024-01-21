@@ -58,7 +58,7 @@ public class Filmarkiv implements FilmarkivADT {
     public Film[] soekTittel(String delstreng) {
         List<Film>  match = new ArrayList<>();
         for (Film film : filmer) {
-            if (film.getTittel().contains(delstreng)) {
+            if (film != null && film.getTittel().contains(delstreng)) {
                 match.add(film);
             }
         }
