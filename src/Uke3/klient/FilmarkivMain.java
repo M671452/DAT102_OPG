@@ -8,10 +8,5 @@ public class FilmarkivMain {
         FilmarkivADT filma = new Filmarkiv(100);
         Meny meny = new Meny(filma);
         meny.start();
-
-        Film x = new Film(1, 1999, "Ola Nordmann", "The Movie", "Paramount", Sjanger.ANIMATION);
-        filma.leggTilFilm(x);
-
-       // Tekstgrensesnitt.skrivUtFilmDelstrengITittel(filma, "The");
     }
 }
